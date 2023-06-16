@@ -5,55 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header class="header">
+    <header class="header section">
         <div class="container">
             <!-- Логотип -->
-            <a href="./"></a>
+            <img class="logo" src="./images/ed69f7fa91929ff49ecafac2bfd72360 2.svg" alt="logo">
             <!-- Навігація -->
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="./">Main page</a>
+                        <a class="nav-link" href="./">Main page</a>
                     </li>
                     <li class="nav-item">
-                        <a href="">Benefits</a>
+                        <a class="nav-link" href="">Benefits</a>
                     </li>
                     <li class="nav-item">
-                        <a href="">Advantages</a>
-                    </li>
-                    <li class="nav-list">
-                        <a href="">Reviews</a>
+                        <a class="nav-link" href="">Advantages</a>
                     </li>
                     <li class="nav-item">
-                        <a href="">Contacts</a>
+                        <a class="nav-link" href="">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a href="">Order</a>
+                        <a class="nav-link" href="">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Order</a>
                     </li>
                 </ul>
             </nav>
             <!-- Мова -->
             <ul class="language">
                 <li class="language-item">
-                    <button class="button">Ua</button>
+                    <button>Ua</button>
                 </li>
                 <li class="language-item">
-                    <button class="button">Eng</button>
+                    <button>Eng</button>
                 </li>
             </ul>
 
         </div>
     </header>
 
-    <main>
+    <main class="main">
                         <!-- Секція герой -->
         <section class="section">
             <div class="container">
-                <p class="">С&R</p>
+                <p class="С&R">С&R</p>
                 <h1 class="title">ColoRawe</h1>
                 <h2 class="hero-title">Your dream Nike</h2>
                 <p class="hero-text">On this site you can find custom Nike sneakers of your dreams. 
@@ -91,28 +94,98 @@
         <section class="section">
             <div class="container">
 
-                <h2>Reviews</h2>
+                <h2 class="">Reviews</h2>
 
                 <ul class="reviews-list">
                     <li class="reviews-item">
                         <p class="reviews">Sneakers are very 
                             comfortable and well 
                             painted, nothing has 
-                            worn off in a year.</p>
-                        
+                            worn off in a year. <span>25.11</span></p>
+                        <img src="./images/Ellipse 17.png" alt="foto">
+                        <p class="name">John Teylor</p>
+                        <p class="date">With us from 2018</p>
                     </li>
                     <li class="reviews-item">
                         <p class="reviews">I'm very happy with this color scheme.
-                            They match all my clothes.</p>
+                            They match all my clothes. <span>05.01</span></p>
+                        <img src="./images/Ellipse 18.png" alt="foto">
+                        <p class="name">Elizabeth Garsia</p>
+                        <p class="date">With us from 2020</p>
                     </li>
                     <li class="reviews-item">
                         <p class="reviews">Just right if you need to go to a party.
-                            I use them actively, the paint is super.</p>
+                            I use them actively, the paint is super. <span>18.06</span></p>
+                        <img src="./images/Ellipse 19.png" alt="foto">
+                        <p class="name">Tom Maquare</p>
+                        <p class="date">With us from 2019</p>
                     </li>
                 </ul>
 
             </div>
         </section>
+
+        <!-- Order  -->
+
+        <section class="section">
+            <div class="container">
+
+                <h2>Order</h2>
+
+                <form>
+                    <input placeholder="Write your email" type="email">
+                    <input placeholder="Your Country" type="text">
+                    <input placeholder="Your City" type="text">
+                    <input placeholder="Your Adress" type="text">
+                    <button class="Order-btn"></button>
+                </form>
+
+            </div>
+        </section>
     </main>
+
+    <!-- Footer  -->
+
+    <footer class="footer section">
+        <div class="container">
+
+            <ul class="question-list">
+                <li class="item">
+                    <a href="">Have a question?</a>
+                </li>
+                <li class="item">
+                    <a href="">Have a proposal for cooperation?</a>
+                </li>
+                <li class="item">
+                    <a href="">Advertising questions?</a>
+                </li>
+            </ul>
+
+            <ul class="address-list">
+                <li class="address">
+                    <a href="">ColoRawe_support@gmail.com</a>
+                </li>
+                <li class="address">
+                    <a href="">ColoRawe_Cooperation@gmail.com</a>
+                </li>
+                <li class="address">
+                    <a href="">ColoRawe_Advertising@gmail.com</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li class="item">
+                    <p class="text">2022 ColoRawe @All rights reserved</p>
+                </li>
+                <li class="item">
+                    <p class="text">United States</p>
+                </li>
+                <li class="item">
+                    <p class="С&R">С&R</p>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
 </body>
 </html>

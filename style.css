@@ -1,3 +1,75 @@
-ul{
+:root{
+    --text-color-1: #ffffff;
+    --nav-text: #C7C7C7;
+    --button-color: #8E32C6;
+    --header-background-color: #012D63;
+    --footer-background-color: #021635;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+li{
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Загальні стилі */
+
+.container{
+    width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* Header  */
+
+.header{
+    background-color: var(--header-background-color);
+}
+
+.header .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.nav-list{
+    display: flex;
+    margin-left: 152px;
+}
+
+.nav-item:not(:first-child){
+    margin-left: 29px;
+}
+
+.language{
+    display: flex;
+    margin-left: auto;
 }
