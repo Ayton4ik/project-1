@@ -13,6 +13,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    font-weight: 400;
     background-color: var(--background-color);
 }
 
@@ -30,6 +31,8 @@ li{
     padding: 0;
     margin: 0;
 }
+
+
 
 /* Загальні стилі */
 
@@ -52,12 +55,7 @@ li{
     justify-content: center;
     align-items: center;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
-.logo{
-    width: 100px;
 }
 
 .nav-list{
@@ -69,7 +67,61 @@ li{
     margin-left: 29px;
 }
 
+.nav-item{
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    font-weight: 300;
+    color: var(--nav-text);
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    font-weight: 400;
+    color: var(--text-color-1);
+}
+
 .language{
     display: flex;
     margin-left: auto;
+}
+
+/* Секція герой */
+
+.hero{
+    background-image: url('./images/Group\ 37\ \(1\)\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-img{
+    width: 160px;
+}
+
+.hero-img + p{
+    font-family: 'PT Serif';
+    color: var(--text-color-1);
+}
+
+.title{
+    font-family: 'Playfair Display';
+    font-size: 144px;
+    line-height: 192px;
+    color: var(--text-color-1);
+}
+
+.hero-title{
+    font-family: 'Playfair Display';
+    font-size: 72px;
+    line-height: 96px;
+    color: var(--text-color-1);
+}
+
+.hero-text{
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text-color-1);
 }
