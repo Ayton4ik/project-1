@@ -52,7 +52,7 @@ li{
 
 .header .container{
     display: flex;
-    justify-content: center;
+   
     align-items: center;
 
 
@@ -85,7 +85,19 @@ li{
 
 .language{
     display: flex;
-    margin-left: auto;
+    margin-left: 70px;
+}
+
+.language-btn{
+    color: var(--nav-text);
+    border: none;
+    background-color: transparent;
+}
+
+.language-btn:hover,
+.language-btn:focus{
+    font-weight: 400;
+    color: var(--text-color-1);
 }
 
 /* Секція герой */
@@ -94,7 +106,10 @@ li{
     background-image: url('./images/Group\ 37\ \(1\)\ 1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    padding-bottom: 183px;
+    padding-top: 107px;
+    
 }
 
 .hero-img{
@@ -104,6 +119,8 @@ li{
 .hero-img + p{
     font-family: 'PT Serif';
     color: var(--text-color-1);
+    font-size: 48px;
+    line-height: 64px;
 }
 
 .title{
@@ -116,6 +133,7 @@ li{
 .hero-title{
     font-family: 'Playfair Display';
     font-size: 72px;
+    font-weight: 300;
     line-height: 96px;
     color: var(--text-color-1);
 }
@@ -124,4 +142,129 @@ li{
     font-size: 18px;
     line-height: 21px;
     color: var(--text-color-1);
+    padding-bottom: 43px;
+}
+
+.hero-btn{
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 28px;
+    padding: 19px 60px;
+    background-color: var(--button-color);
+    border: none;
+    color: var(--text-color-1);
+    border-radius: 10px;
+}
+
+/* Про нас */
+
+
+.about{
+    background-color: var(--footer-background-color);
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px var(--button-color);
+}
+
+.item{
+    padding: 25px 50px;
+}
+
+.paints{
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.item > h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    width: 102px;
+    color: var(--text-color-1);
+}
+
+.stars::after{
+    content: '';
+    display: block;
+    height: 240px;
+    width: 240px;
+    background-image: url('./images/Звёзды\ 1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paints::before{
+    content: '';
+    display: block;
+    height: 240px;
+    width: 240px;
+    background-image: url('./images/Краски\ 1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.truck::after{
+    content: '';
+    display: block;
+    height: 240px;
+    width: 240px;
+    background-image: url('./images/Грузан\ 1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paints,
+.truck{
+    border-left: solid 3px var(--text-color-1);
+}
+
+/* Відгуки */
+
+.sectionreviews{
+    background-color: var(--footer-background-color);
+    padding-top: 20px;
+    padding-bottom: 114px;
+}
+
+.title-rv{
+    font-size: 48px;
+    font-family: 'Playfair Display';
+    color: var(--text-color-1);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.reviews-list{
+    display: flex;
+}
+
+.reviews-item{
+    width: 255px;
+    padding: 49px 14px 29px 14px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.50%, #CC5EC2 100%);
+    box-shadow: 0px 30px 0px -13px #533978, 0px 14px 0px -5px #7B54B2;
+}
+
+.reviews{
+    font-size: 24px;
+    font-family: 'Roboto';
+    color: var(--text-color-1);
+}
+
+.reviews > span{
+    font-size: 14px;
+    font-family: Roboto;
 }
