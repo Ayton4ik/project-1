@@ -160,9 +160,13 @@ li{
 
 
 .about{
-    background-color: var(--footer-background-color);
+    background-image: url('./images/Group\ 8\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 105px;
     padding-bottom: 105px;
+    border-bottom: solid 2px var(--text-color-1);
 }
 
 .about-us{
@@ -233,9 +237,13 @@ li{
 /* Відгуки */
 
 .sectionreviews{
-    background-color: var(--footer-background-color);
+    background-image: url('./images/Group\ 6\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 20px;
     padding-bottom: 114px;
+    border-bottom: solid 2px var(--text-color-1);
 }
 
 .title-rv{
@@ -248,14 +256,28 @@ li{
 }
 .reviews-list{
     display: flex;
+    justify-content: space-around;
 }
 
 .reviews-item{
     width: 255px;
     padding: 49px 14px 29px 14px;
     border-radius: 15px;
+}
+
+.reviews-item:nth-child(1){
     background: linear-gradient(135deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.50%, #CC5EC2 100%);
     box-shadow: 0px 30px 0px -13px #533978, 0px 14px 0px -5px #7B54B2;
+}
+
+.reviews-item:nth-child(2){
+    background: linear-gradient(135deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
+    box-shadow: 0px 30px 0px -13px #61337C, 0px 14px 0px -5px #9159B1;
+}
+
+.reviews-item:nth-child(3){
+    background: linear-gradient(135deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
+    box-shadow: 0px 30px 0px -13px #732F26, 0px 14px 0px -5px #B95A4C;
 }
 
 .reviews{
@@ -266,5 +288,110 @@ li{
 
 .reviews > span{
     font-size: 14px;
-    font-family: Roboto;
+    font-family: 'Roboto';
 }
+
+.flex{
+    display: flex;
+    margin-top: 45px;
+}
+
+.flex > img{
+    height: 31px;
+}
+
+/* Order */
+
+.sectionorder{
+    background-image: url('./images/Group\ 2\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 37px;
+}
+
+.title-order{
+    font-size: 48px;
+    font-family: 'Playfair Display';
+    color: var(--text-color-1);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    border-radius: 50px;
+    margin-bottom: 19px;
+    font-family: 'Roboto';
+    color: #959595;
+}
+
+.input-1{
+    padding: 12px 460px 13px 25px;
+    font-size: 28px;
+}
+
+.input-2{
+    padding: 11px 417px 11px 24px;
+    font-size: 24px;
+}
+
+.Order-btn{
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 28px;
+    padding: 19px 60px;
+    background-color: var(--button-color);
+    border: none;
+    color: var(--text-color-1);
+    border-radius: 16px;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--footer-background-color);
+}
+
+.footerflex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-item > a{
+    font-size: 24px;
+    font-family: 'Roboto';
+    color: var(--text-color-1);
+}
+
+.address > a{
+    font-size: 24px;
+    font-family: 'Roboto';
+    text-decoration-line: underline;
+    color: var(--text-color-1);
+}
+
+.border{
+    border-bottom: solid 1px #9B9B9B;;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-item{
+    font-size: 18px;
+    font-family: Roboto;
+    color: var(--text-color-1);
+}
+
+.footer-img + p{
+    font-size: 24px;
+    font-family: 'PT Serif';
+    color: var(--text-color-1);
+    text-align: center;
+}
+
